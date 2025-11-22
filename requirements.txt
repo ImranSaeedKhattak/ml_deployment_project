@@ -1,0 +1,8 @@
+streamlit
+fastapi
+uvicorn[standard]
+scikit-learn
+numpy
+pandas
+pickle5  # just in case
+requests

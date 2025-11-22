@@ -1,0 +1,11 @@
+{
+  "test_accuracy": 0.912,
+  "test_auc": 0.956,
+  "top_features": [
+    ["thal", 0.2412],
+    ["ca", 0.1891],
+    ["oldpeak", 0.1324],
+    ["thalach", 0.0987],
+    ["chol", 0.0876]
+  ]
+}

@@ -1,0 +1,24 @@
+# run_once.py
+import joblib
+import pickle
+import json
+
+# Load your model (universal way)
+with open("trained_model.pkl", "rb") as f:
+    model = pickle.load(f)
+
+# Replace this with your actual X_train or X_test DataFrame
+# Example:
+# import pandas as pd
+# df = pd.read_csv("your_data.csv")
+# X = df.drop("target", axis=1)
+
+# FOR NOW, just put your real feature names here manually if you know them:
+feature_names = [
+    "age", "sex", "cp", "trestbps", "chol", "fbs", "restecg", 
+    "thalach", "exang", "oldpeak", "slope", "ca", "thal"
+    # ← CHANGE THESE TO YOUR ACTUAL FEATURES
+]
+
+json.dump(feature_names, open("feature_names.json", "w"))
+print("feature_names.json created!")
